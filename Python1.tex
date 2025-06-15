@@ -1,4 +1,4 @@
-\documentclass[]{jlreq}
+\documentclass{jlreq}
 
 \usepackage{mathtools}
 \usepackage{siunitx}
@@ -6,7 +6,10 @@
 \usepackage{graphicx}
 \usepackage{xcolor}
 \usepackage{multirow}
+\usepackage{url}
+\usepackage[style=numeric,backend=biber]{biblatex}
 
+\addbibresource{Python1.bib}
 \definecolor{listinggray}{gray}{0.9}
 \setlength{\columnseprule}{0.4pt}
 \lstset{
@@ -250,16 +253,26 @@ OpenCVライブラリの機能であるCanny関数とHoughCircles関数を使っ
 するとコインの外側だけを検出することができた。
 
 \section{課題}
-\subsection{フィルタ処理について、他にどんな物があるか調査せよ}
-\subsubsection{ハイパスフィルタ\(\overline{\cite{highpath}}\)}
+\subsection{フィルタ処理について、他にどんな物があるか調査せよ\cite{highpath}}
+\subsubsection{ハイパスフィルタ}
 高周波数成分は残し、低周波数成分は除去するようなフィルタをハイパスフィルタという。
 周波数成分とは画像の急激な変化のことである。
 低周波数を除去し高周波数は残すので、画像のエッジや細かい模様を強調することができる。
 
 \subsection{物体や園の特徴の検出以外に、他にどんなものがあるか調査せよ}
 \subsubsection{傾き補正}
+画像の文字や文字行の傾きを最小外接矩形を使うとOpenCVのみで傾きの補正が行える。
 
-\bibliographystyle{plain}
-\bibliography{Python1}
+グレースケール、ノイズ処理、二値化処理をする。
+そして文字や文字行を構成するすべての輪郭点をfindContours関数で集める。
+集めた点に対してminAreaRect関数を適用し、矩形の回転角度を取得する。
+取得した角度を補正角としてgetRotationMatrix2D関数とwarpAffine関数により回転し、水平化する。
+
+これを行うことで画像の文字や文字行の傾きを補正できる。
+
+%\bibliographystyle{plainurl}
+%\bibliography{Python1}
+
+\printbibliography
 
 \end{document}
