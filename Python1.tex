@@ -1,4 +1,4 @@
-\documentclass{jlreq}
+\documentclass{ltjsarticle}
 
 \usepackage{mathtools}
 \usepackage{siunitx}
@@ -7,12 +7,18 @@
 \usepackage{xcolor}
 \usepackage{multirow}
 \usepackage{url}
-\usepackage[style=numeric,backend=biber]{biblatex}
-
+\usepackage[%
+	backend=bibtex,
+	citestyle=numeric,
+	url=true,
+	doi=true,
+	bibencoding=utf8,
+	bibstyle=ieee,
+	]{biblatex}
 \addbibresource{Python1.bib}
 \definecolor{listinggray}{gray}{0.9}
 \setlength{\columnseprule}{0.4pt}
-\lstset{
+\lstset{%
 	stringstyle=\ttfamily,
 	columns=fullflexible,
 	numbers=left,
@@ -253,7 +259,7 @@ OpenCVライブラリの機能であるCanny関数とHoughCircles関数を使っ
 するとコインの外側だけを検出することができた。
 
 \section{課題}
-\subsection{フィルタ処理について、他にどんな物があるか調査せよ\cite{highpath}}
+\subsection{フィルタ処理について、他にどんな物があるか調査せよ\cite{Highpath}}
 \subsubsection{ハイパスフィルタ}
 高周波数成分は残し、低周波数成分は除去するようなフィルタをハイパスフィルタという。
 周波数成分とは画像の急激な変化のことである。
