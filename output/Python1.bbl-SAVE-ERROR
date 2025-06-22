@@ -1,0 +1,69 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.3 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{none/global//global/global/global}
+    \entry{Highpath}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=ef7650abdccf185a0a1b90a89ffe786f}{%
+           family={Jiino},
+           familyi={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{ef7650abdccf185a0a1b90a89ffe786f}
+      \strng{fullhash}{ef7650abdccf185a0a1b90a89ffe786f}
+      \strng{fullhashraw}{ef7650abdccf185a0a1b90a89ffe786f}
+      \strng{bibnamehash}{ef7650abdccf185a0a1b90a89ffe786f}
+      \strng{authorbibnamehash}{ef7650abdccf185a0a1b90a89ffe786f}
+      \strng{authornamehash}{ef7650abdccf185a0a1b90a89ffe786f}
+      \strng{authorfullhash}{ef7650abdccf185a0a1b90a89ffe786f}
+      \strng{authorfullhashraw}{ef7650abdccf185a0a1b90a89ffe786f}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{https://tech-deliberate-jiro.com/spectral-filtering/}
+      \field{title}{【画像処理】周波数フィルタリング\_ローパス/ハイパス/バンドパス広域強調フィルタ}
+      \field{year}{2025}
+    \endentry
+    \entry{Katamuki}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=e56b4837cf9f176d51eb7c8de043cd56}{%
+           family={T_A_T},
+           familyi={T\bibinitperiod}}}%
+      }
+      \strng{namehash}{e56b4837cf9f176d51eb7c8de043cd56}
+      \strng{fullhash}{e56b4837cf9f176d51eb7c8de043cd56}
+      \strng{fullhashraw}{e56b4837cf9f176d51eb7c8de043cd56}
+      \strng{bibnamehash}{e56b4837cf9f176d51eb7c8de043cd56}
+      \strng{authorbibnamehash}{e56b4837cf9f176d51eb7c8de043cd56}
+      \strng{authornamehash}{e56b4837cf9f176d51eb7c8de043cd56}
+      \strng{authorfullhash}{e56b4837cf9f176d51eb7c8de043cd56}
+      \strng{authorfullhashraw}{e56b4837cf9f176d51eb7c8de043cd56}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{https://tat-pytone.hatenablog.com/entry/2020/12/13/101101}
+      \field{title}{傾いた画像を自動で水平にする}
+      \field{year}{2020}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

@@ -1,4 +1,4 @@
-\documentclass{ltjsarticle}
+\documentclass{jlreq}
 
 \usepackage{mathtools}
 \usepackage{siunitx}
@@ -6,16 +6,13 @@
 \usepackage{graphicx}
 \usepackage{xcolor}
 \usepackage{multirow}
-\usepackage{url}
+\usepackage{comment}
 \usepackage[%
-	backend=bibtex,
-	citestyle=numeric,
-	url=true,
-	doi=true,
-	bibencoding=utf8,
-	bibstyle=ieee,
-	]{biblatex}
-\addbibresource{Python1.bib}
+backend = biber,
+bibstyle = ieee,
+]{biblatex}
+%
+
 \definecolor{listinggray}{gray}{0.9}
 \setlength{\columnseprule}{0.4pt}
 \lstset{%
@@ -27,7 +24,8 @@
 	frame=single,
 	morecomment=[l]{//},
 }
-\renewcommand{\lstlistingname}{ソースコード}
+\renewcommand{\lstlistingname}{コード}
+\addbibresource{Python1.bib}
 
 \begin{document}
 
@@ -77,7 +75,7 @@ Pythonのライブラリについて理解を深め、画像処理技術の第�
 \subsection{ハフ変換}
 ハフ変換という特徴検出手法がある。 %直線のハフ変換
 ある直線上にある点の座標を\((x,y)\)としてそれをパラメータ空間\((\rho,\theta)\)に映す。
-その点を通る直線に対し\(\rho\)を原点からの距離、\(\theta\)をX軸と距離がなす角度としたとき式\ref{eq:HesseNormalForm}と表せる。
+その点を通る直線に対し\(\rho\)を原点からの距離、\(\theta\)をX軸と距離がなす角度としたとき式\refeq{eq:HesseNormalForm}と表せる。
 これをヘッセの標準形という。
 \begin{align}
 	\rho = x\cos\theta + y\sin\theta \label{eq:HesseNormalForm}
@@ -87,7 +85,7 @@ Pythonのライブラリについて理解を深め、画像処理技術の第�
 その中で投票をし一番得票数の多かった点\((\rho,\theta)\)をある直線の距離と角度として検出する。
 
 円のときも円上の点\((x,y)\)に対して同じ処理をすることで円を検出できる。 %円のハフ変換
-このとき円の中心座標\((p,q)\)と半径\(r\)で式\ref{eq:HoughCircle}と表せる。
+このとき円の中心座標\((p,q)\)と半径\(r\)で式\refeq{eq:HoughCircle}と表せる。
 \begin{align}
 	r ^ 2 = (x - p) ^ 2 + (x - q) ^ 2 \label{eq:HoughCircle}
 \end{align}
@@ -101,7 +99,6 @@ Pythonのライブラリについて理解を深め、画像処理技術の第�
 \subsection{円検出}
 OpenCVライブラリの機能であるCanny関数とHoughCircles関数を使ってハフ変換を行う。
 そこから中心点の座標と半径を得てCircle関数を使い円を描く。
-
 \section{結果}
 
 \subsection{物体検出}
@@ -219,7 +216,6 @@ OpenCVライブラリの機能であるCanny関数とHoughCircles関数を使っ
 		cv2.circle(img_out,(p,q),5,(255,0,0),5)
 	cv2.imshow(img_out)
 \end{lstlisting}
-
 \section{考察}
 
 \subsection{物体検出}
@@ -259,13 +255,13 @@ OpenCVライブラリの機能であるCanny関数とHoughCircles関数を使っ
 するとコインの外側だけを検出することができた。
 
 \section{課題}
-\subsection{フィルタ処理について、他にどんな物があるか調査せよ\cite{Highpath}}
-\subsubsection{ハイパスフィルタ}
+\subsection{フィルタ処理について、他にどんな物があるか調査せよ}
+\subsubsection{ハイパスフィルタ\textsuperscript{\cite{Highpath}}}
 高周波数成分は残し、低周波数成分は除去するようなフィルタをハイパスフィルタという。
 周波数成分とは画像の急激な変化のことである。
 低周波数を除去し高周波数は残すので、画像のエッジや細かい模様を強調することができる。
 
-\subsection{物体や園の特徴の検出以外に、他にどんなものがあるか調査せよ}
+\subsection{物体や円の特徴の検出以外に、他にどんなものがあるか調査せよ\textsuperscript{\cite{Katamuki}}}
 \subsubsection{傾き補正}
 画像の文字や文字行の傾きを最小外接矩形を使うとOpenCVのみで傾きの補正が行える。
 
@@ -276,9 +272,6 @@ OpenCVライブラリの機能であるCanny関数とHoughCircles関数を使っ
 
 これを行うことで画像の文字や文字行の傾きを補正できる。
 
-%\bibliographystyle{plainurl}
-%\bibliography{Python1}
-
-\printbibliography
+\printbibliography[title=参考文献]
 
 \end{document}
