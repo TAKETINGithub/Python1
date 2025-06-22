@@ -168,6 +168,15 @@ OpenCVライブラリの機能であるCanny関数とHoughCircles関数を使っ
 	img = cv2.rectangle(img_org,(x,y),(x+w,y+h),(0,0,0),2) #長方形を描画
 	cv2_imshow(img) #結果画像を表示
 \end{lstlisting}
+\(3\times3\)から\(7\times7\)にしたらよりピクセル値が均一になった。
+ピクセル値がすべて3桁の数字になった。
+
+しきい値が150だとノイズが入った。
+
+図\ref{fig:histgram}より130くらいから増えていたのでしきい値を130にした。
+
+長方形がしっかりとボールペンの先端とキャップ側を囲えていた。
+
 
 \subsection{円検出}
 
@@ -216,21 +225,7 @@ OpenCVライブラリの機能であるCanny関数とHoughCircles関数を使っ
 		cv2.circle(img_out,(p,q),5,(255,0,0),5)
 	cv2.imshow(img_out)
 \end{lstlisting}
-\section{考察}
 
-\subsection{物体検出}
-\subsubsection{実験1}
-\(3\times3\)から\(7\times7\)にしたらよりピクセル値が均一になった。
-ピクセル値がすべて3桁の数字になった。
-
-\subsubsection{実験2}
-しきい値が150だとノイズが入った。
-
-図\ref{fig:histgram}より130くらいから増えていたのでしきい値を130にした。
-
-長方形がしっかりとボールペンの先端とキャップ側を囲えていた。
-
-\subsubsection{実験3}
 結果は表\ref{tb:Jikken3}のようになった。
 \begin{table}[htbp]
 	\centering
@@ -245,14 +240,44 @@ OpenCVライブラリの機能であるCanny関数とHoughCircles関数を使っ
 	}
 \end{table}
 
-\subsection{実験4}
 最初50円玉の中心だけが複数個検出された。
 なのでminDistとminRadius、maxRadiusを上げた。
 
 すると変な検出がいくつか出てきた。
-なのでparam1=100、param2=200、maxRadius=400煮上げた。
+なのでparam1=100、param2=200、maxRadius=400に上げた。
 
 するとコインの外側だけを検出することができた。
+
+\section{考察}
+
+\subsection{物体検出}
+\subsubsection{実験1}
+
+範囲を広くすれば、画像内のオペレーターに含まれる画素の割合が多くなるので、より均一なものになる。
+
+\subsubsection{実験2}
+
+図\ref{fig:histgram}より130ほどから急激に増えているのがわかる。
+
+150付近のものは机の部分なのでその部分が増える直前にしきい値を設定すれば良い。
+
+\subsubsection{実験3}
+
+両方低くしたときにノイズが多いのは第２引数が低いと微妙な差でもエッジと認識されるからだろう。
+
+両方高くしたときにエッジがあまり検出できていないのは第１引数が高いとエッジなのにエッジではないと認識されるからだろう。
+
+２つの引数の値の差を大きくしたときに正しく認識できているのはしきい値がエッジの部分をしっかりと捉えており、かつ第１引数で微妙なところをしっかりと弾けているからだろう。
+
+\subsection{実験4}
+
+minDistを大きくすることで多重に検出されるのを防ぐ。
+
+minRadiusを大きくすることで小さすぎるブロブを弾く。
+
+maxRadiusを大きくすることで外側の大きい円を検出できるようにする。
+
+param1とparam2を調整することで外側のエッジのみを検出できるようにする。
 
 \section{課題}
 \subsection{フィルタ処理について、他にどんな物があるか調査せよ}

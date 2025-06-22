@@ -1,7 +1,7 @@
-This is LuaHBTeX, Version 1.22.0 (TeX Live 2025)  (format=lualatex 2025.4.18)  22 JUN 2025 18:07
+This is LuaHBTeX, Version 1.22.0 (TeX Live 2025)  (format=lualatex 2025.4.18)  22 JUN 2025 18:51
  restricted system commands enabled.
  file:line:error style messages enabled.
-**e:/Github/Python1/Python1.tex
+**e:/Github/Python1/Python1
 (e:/Github/Python1/Python1.tex
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-03-26>
@@ -1176,70 +1176,70 @@ Removing  `ltj.listings_unicode' from `process_input_buffer'.
 <Image/img2_org.png, id=33, 3083.52pt x 4111.36pt>
 File: Image/img2_org.png Graphic file (type png)
 <use Image/img2_org.png>
-Package luatex.def Info: Image/img2_org.png  used on input line 179.
+Package luatex.def Info: Image/img2_org.png  used on input line 188.
 (luatex.def)             Requested size: 105.60243pt x 140.77559pt.
 <Image/img2_gray.png, id=34, 3083.52pt x 4111.36pt>
 File: Image/img2_gray.png Graphic file (type png)
 <use Image/img2_gray.png>
-Package luatex.def Info: Image/img2_gray.png  used on input line 185.
+Package luatex.def Info: Image/img2_gray.png  used on input line 194.
 (luatex.def)             Requested size: 105.60243pt x 140.77559pt.
 <Image/img2_edge.png, id=35, 3083.52pt x 4111.36pt>
 File: Image/img2_edge.png Graphic file (type png)
 <use Image/img2_edge.png>
-Package luatex.def Info: Image/img2_edge.png  used on input line 191.
+Package luatex.def Info: Image/img2_edge.png  used on input line 200.
 (luatex.def)             Requested size: 105.60243pt x 140.77559pt.
 <Image/img2_res.png, id=36, 3083.52pt x 4111.36pt>
 File: Image/img2_res.png Graphic file (type png)
 <use Image/img2_res.png>
-Package luatex.def Info: Image/img2_res.png  used on input line 197.
+Package luatex.def Info: Image/img2_res.png  used on input line 206.
 (luatex.def)             Requested size: 105.60243pt x 140.77559pt.
 Removing  `ltj.process_input_buffer' from `process_input_buffer'.
 Inserting `ltj.listings_unicode' in `process_input_buffer'.
 Inserting `ltj.process_input_buffer' in `process_input_buffer'.
 Removing  `ltj.listings_unicode' from `process_input_buffer'.
-
-[4<./Image/img2_org.png><./Image/img2_gray.png><./Image/img2_edge.png><./Image/img2_res.png>]
-Overfull \hbox (26.97998pt too wide) in paragraph at lines 245--246
+Overfull \hbox (26.97998pt too wide) in paragraph at lines 240--241
  [][] 
  []
 
-LaTeX Font Info:    Font shape `JT3/gt/b/n' in size <7> not available
-(Font)              Font shape `JT3/gt/m/n' tried instead on input line 260.
-LaTeX Font Info:    Font shape `JT3/gt/m/n' will be
-(Font)              scaled to size 7.0pt on input line 260.
-LaTeX Font Info:    Font shape `JY3/gt/b/n' in size <7> not available
-(Font)              Font shape `JY3/gt/m/n' tried instead on input line 260.
-LaTeX Font Info:    Font shape `JY3/gt/m/n' will be
-(Font)              scaled to size 7.0pt on input line 260.
 
+
+[4<./Image/img2_org.png><./Image/img2_gray.png><./Image/img2_edge.png><./Image/img2_res.png>]
 
 [5]
+LaTeX Font Info:    Font shape `JT3/gt/b/n' in size <7> not available
+(Font)              Font shape `JT3/gt/m/n' tried instead on input line 285.
+LaTeX Font Info:    Font shape `JT3/gt/m/n' will be
+(Font)              scaled to size 7.0pt on input line 285.
+LaTeX Font Info:    Font shape `JY3/gt/b/n' in size <7> not available
+(Font)              Font shape `JY3/gt/m/n' tried instead on input line 285.
+LaTeX Font Info:    Font shape `JY3/gt/m/n' will be
+(Font)              scaled to size 7.0pt on input line 285.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <12> on input line 265.
+(Font)              <12> on input line 290.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 265.
+(Font)              <8> on input line 290.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 265.
+(Font)              <6> on input line 290.
 LaTeX Font Info:    Font shape `JY3/mc/m/n' will be
-(Font)              scaled to size 8.0pt on input line 265.
+(Font)              scaled to size 8.0pt on input line 290.
 LaTeX Font Info:    Font shape `JY3/mc/m/n' will be
-(Font)              scaled to size 6.0pt on input line 265.
+(Font)              scaled to size 6.0pt on input line 290.
 LaTeX Font Info:    Font shape `JT3/gt/b/n' in size <8> not available
-(Font)              Font shape `JT3/gt/m/n' tried instead on input line 265.
+(Font)              Font shape `JT3/gt/m/n' tried instead on input line 290.
 LaTeX Font Info:    Font shape `JT3/gt/m/n' will be
-(Font)              scaled to size 8.0pt on input line 265.
+(Font)              scaled to size 8.0pt on input line 290.
 LaTeX Font Info:    Font shape `JY3/gt/b/n' in size <8> not available
-(Font)              Font shape `JY3/gt/m/n' tried instead on input line 265.
+(Font)              Font shape `JY3/gt/m/n' tried instead on input line 290.
 LaTeX Font Info:    Font shape `JY3/gt/m/n' will be
-(Font)              scaled to size 8.0pt on input line 265.
+(Font)              scaled to size 8.0pt on input line 290.
 LaTeX Font Info:    Font shape `JT3/gt/m/it' in size <10> not available
-(Font)              Font shape `JT3/gt/m/n' tried instead on input line 275.
+(Font)              Font shape `JT3/gt/m/n' tried instead on input line 300.
 LaTeX Font Info:    Font shape `JT3/gt/m/n' will be
-(Font)              scaled to size 10.0pt on input line 275.
+(Font)              scaled to size 10.0pt on input line 300.
 LaTeX Font Info:    Font shape `JY3/gt/m/it' in size <10> not available
-(Font)              Font shape `JY3/gt/m/n' tried instead on input line 275.
+(Font)              Font shape `JY3/gt/m/n' tried instead on input line 300.
 LaTeX Font Info:    Font shape `JY3/gt/m/n' will be
-(Font)              scaled to size 10.0pt on input line 275.
+(Font)              scaled to size 10.0pt on input line 300.
 
 
 [6] (./output/Python1.aux)
@@ -1253,16 +1253,16 @@ Package logreq Info: Writing requests to 'Python1.run.xml'.
 )
 
 Here is how much of LuaTeX's memory you used:
- 21642 strings out of 471941
- 156559,1373583 words of node,token memory allocated
+ 21641 strings out of 471941
+ 156564,1373583 words of node,token memory allocated
  1314 words of node memory still in use:
    12 hlist, 2 vlist, 6 rule, 2 glue, 4 kern, 2 glyph, 273 attribute, 67 glue_spec, 38 attribute_list, 1 write, 15 user_defined nodes
-   avail lists: 1:45,2:38294,3:559,4:2809,5:642,6:83,7:3191,8:18,9:3506,10:19,11:42
+   avail lists: 1:45,2:38293,3:558,4:2809,5:642,6:84,7:3385,8:18,9:3507,10:19,11:42
  47792 multiletter control sequences out of 65536+600000
  71 fonts using 68974199 bytes
- 119i,12n,112p,1856b,1427s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 119i,12n,112p,1852b,1427s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <d:/LaTex/texlive/2025/texmf-dist/fonts/opentype/public/lm/lmroman10-italic.otf><d:/LaTex/texlive/2025/texmf-dist/fonts/opentype/public/lm/lmmono10-regular.otf><d:/LaTex/texlive/2025/texmf-dist/fonts/opentype/public/lm/lmroman10-bold.otf><d:/LaTex/texlive/2025/texmf-dist/fonts/opentype/public/lm/lmroman7-italic.otf>{d:/LaTex/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{d:/LaTex/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}<d:/LaTex/texlive/2025/texmf-dist/fonts/opentype/public/lm/lmroman9-regular.otf>{d:/LaTex/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}<d:/LaTex/texlive/2025/texmf-dist/fonts/opentype/public/haranoaji/HaranoAjiMincho-Regular.otf><d:/LaTex/texlive/2025/texmf-dist/fonts/opentype/public/lm/lmroman10-regular.otf><d:/LaTex/texlive/2025/texmf-dist/fonts/opentype/public/haranoaji/HaranoAjiGothic-Medium.otf><d:/LaTex/texlive/2025/texmf-dist/fonts/opentype/public/lm/lmsans10-bold.otf><d:/LaTex/texlive/2025/texmf-dist/fonts/type1/public/lm/lmmi10.pfb><d:/LaTex/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr10.pfb><d:/LaTex/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr7.pfb><d:/LaTex/texlive/2025/texmf-dist/fonts/type1/public/lm/lmsy10.pfb>
-Output written on Python1.pdf (6 pages, 24427534 bytes).
+Output written on Python1.pdf (6 pages, 24433786 bytes).
 
 PDF statistics: 117 PDF objects out of 1000 (max. 8388607)
  65 compressed objects within 1 object stream
