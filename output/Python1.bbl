@@ -43,24 +43,24 @@
     \endentry
     \entry{Katamuki}{misc}{}{}
       \name{author}{1}{}{%
-        {{hash=6dfb0f00e273b84b0a5034291f154dbe}{%
-           family={T\_A\_T},
+        {{hash=be3b655ebf122a5f9892fe508c0e8f88}{%
+           family={TAT},
            familyi={T\bibinitperiod}}}%
       }
-      \strng{namehash}{6dfb0f00e273b84b0a5034291f154dbe}
-      \strng{fullhash}{6dfb0f00e273b84b0a5034291f154dbe}
-      \strng{fullhashraw}{6dfb0f00e273b84b0a5034291f154dbe}
-      \strng{bibnamehash}{6dfb0f00e273b84b0a5034291f154dbe}
-      \strng{authorbibnamehash}{6dfb0f00e273b84b0a5034291f154dbe}
-      \strng{authornamehash}{6dfb0f00e273b84b0a5034291f154dbe}
-      \strng{authorfullhash}{6dfb0f00e273b84b0a5034291f154dbe}
-      \strng{authorfullhashraw}{6dfb0f00e273b84b0a5034291f154dbe}
+      \strng{namehash}{be3b655ebf122a5f9892fe508c0e8f88}
+      \strng{fullhash}{be3b655ebf122a5f9892fe508c0e8f88}
+      \strng{fullhashraw}{be3b655ebf122a5f9892fe508c0e8f88}
+      \strng{bibnamehash}{be3b655ebf122a5f9892fe508c0e8f88}
+      \strng{authorbibnamehash}{be3b655ebf122a5f9892fe508c0e8f88}
+      \strng{authornamehash}{be3b655ebf122a5f9892fe508c0e8f88}
+      \strng{authorfullhash}{be3b655ebf122a5f9892fe508c0e8f88}
+      \strng{authorfullhashraw}{be3b655ebf122a5f9892fe508c0e8f88}
       \field{sortinit}{2}
       \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{howpublished}{https://tat-pytone.hatenablog.com/entry/2020/12/13/101101}
-      \field{title}{傾いた画像を自動で水平にする}
+      \field{title}{{傾いた画像を自動で水平にする}}
       \field{year}{2020}
     \endentry
   \enddatalist
